@@ -1,0 +1,3361 @@
+{
+	"info": {
+		"_postman_id": "9cacf6be-3bae-4224-8533-13e687c98610",
+		"name": "Shipping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Auth",
+			"item": [
+				{
+					"name": "User Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "012345678901",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "ar",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}user/register",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"register"
+							]
+						},
+						"description": "Register new user in users table."
+					},
+					"response": [
+						{
+							"name": "User Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Test",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "012345678901",
+											"type": "text"
+										},
+										{
+											"key": "language",
+											"value": "ar",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "+20",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}user/register",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:10:17 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:10:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9yZWdpc3RlciIsImlhdCI6MTYxNzc0NzAxNywiZXhwIjoxNjE3NzUwNjE3LCJuYmYiOjE2MTc3NDcwMTcsImp0aSI6Ik9LZ1Y4TG10VXJhTTF0MUkiLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.dzZfWCDj68QiI1F9PS-LoJ4GydoNm8XaCIrgJEaVaiE\",\n    \"message\": \"Successfully registered\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "012345678901",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}user/login",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "012345678901",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}user/login",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:12:38 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:12:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYxNzc0NzE1NywiZXhwIjoxNjE3NzUwNzU3LCJuYmYiOjE2MTc3NDcxNTcsImp0aSI6ImxtdHlGM2lqWUJzQkh4YzYiLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6w2aEjZSbCZe0OUQywPTAJaU5BuYIUnq8jAIgOIN7Ok\",\n    \"message\": \"Logged In Successfully\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "User Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYxNzc0NzE1NywiZXhwIjoxNjE3NzUwNzU3LCJuYmYiOjE2MTc3NDcxNTcsImp0aSI6ImxtdHlGM2lqWUJzQkh4YzYiLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6w2aEjZSbCZe0OUQywPTAJaU5BuYIUnq8jAIgOIN7Ok",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}user/logout",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/logout",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:13:35 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:13:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"message\": \"Successfully logged out\",\n    \"code\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Driver Auth",
+			"item": [
+				{
+					"name": "Driver Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "01234567891",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+20",
+									"type": "text"
+								},
+								{
+									"key": "car_name",
+									"value": "Test Car",
+									"type": "text"
+								},
+								{
+									"key": "car_model",
+									"value": "2021",
+									"type": "text"
+								},
+								{
+									"key": "car_license_number",
+									"value": "123456789123",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "ar",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+								},
+								{
+									"key": "car_photo",
+									"type": "file",
+									"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+								},
+								{
+									"key": "driving_license_image",
+									"type": "file",
+									"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+								},
+								{
+									"key": "car_license_image",
+									"type": "file",
+									"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+								},
+								{
+									"key": "id_image",
+									"type": "file",
+									"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+								},
+								{
+									"key": "trucks_types_id",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}driver/register",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Driver Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "012345678910",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "+20",
+											"type": "text"
+										},
+										{
+											"key": "car_name",
+											"value": "Test Car",
+											"type": "text"
+										},
+										{
+											"key": "car_model",
+											"value": "2021",
+											"type": "text"
+										},
+										{
+											"key": "car_license_number",
+											"value": "123456789123",
+											"type": "text"
+										},
+										{
+											"key": "language",
+											"value": "ar",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "car_photo",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "driving_license_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "car_license_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "id_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}user/register",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:21:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:21:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9yZWdpc3RlciIsImlhdCI6MTYxNzc0NzY3OSwiZXhwIjoxNjE3NzUxMjc5LCJuYmYiOjE2MTc3NDc2NzksImp0aSI6ImlET05TRkduTlJKdUpxVmMiLCJzdWIiOjc1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.1xopc4JUSTWNVy_ZNQJU5v_AYp_8WGvzcZ-Y1i-liZA\",\n    \"message\": \"Successfully registered\",\n    \"code\": 200\n}"
+						},
+						{
+							"name": "Driver Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "01234567891",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "+20",
+											"type": "text"
+										},
+										{
+											"key": "car_name",
+											"value": "Test Car",
+											"type": "text"
+										},
+										{
+											"key": "car_model",
+											"value": "2021",
+											"type": "text"
+										},
+										{
+											"key": "car_license_number",
+											"value": "123456789123",
+											"type": "text"
+										},
+										{
+											"key": "language",
+											"value": "ar",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "car_photo",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "driving_license_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "car_license_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "id_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "trucks_types_id",
+											"value": "8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}driver/register",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:25:28 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:25:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL3JlZ2lzdGVyIiwiaWF0IjoxNjE3NzQ3OTI4LCJleHAiOjE2MTc3NTE1MjgsIm5iZiI6MTYxNzc0NzkyOCwianRpIjoiMHVwZ0JXOER2TnFicjVoYiIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.tnVSLHpDgP88mujD0Fe17cbsIyHWdrE0W5f9wsjtiK4\",\n    \"message\": \"Successfully registered\",\n    \"code\": 200\n}"
+						},
+						{
+							"name": "Driver Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "01234567891",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "+20",
+											"type": "text"
+										},
+										{
+											"key": "car_name",
+											"value": "Test Car",
+											"type": "text"
+										},
+										{
+											"key": "car_model",
+											"value": "2021",
+											"type": "text"
+										},
+										{
+											"key": "car_license_number",
+											"value": "123456789123",
+											"type": "text"
+										},
+										{
+											"key": "language",
+											"value": "ar",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "car_photo",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "driving_license_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "car_license_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "id_image",
+											"type": "file",
+											"src": "/C:/Users/ashim/Desktop/Thumbnail.png"
+										},
+										{
+											"key": "trucks_types_id",
+											"value": "8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}driver/register",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "Request Timeout",
+							"code": 408,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:25:43 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:25:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"message\": {\n        \"phone\": [\n            \"The phone has already been taken.\"\n        ]\n    },\n    \"code\": 408\n}"
+						}
+					]
+				},
+				{
+					"name": "Driver Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "01234567891",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}driver/login",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Driver Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "01234567891",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}driver/login",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:26:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:26:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3NzQ3OTc2LCJleHAiOjE2MTc3NTE1NzYsIm5iZiI6MTYxNzc0Nzk3NiwianRpIjoieFVJY0NNaWRwajJkUExJOCIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.38P3IpK6BZ7kxuIXNJuMnctJnRmJRysYaDNQpNEN5k4\",\n    \"message\": \"Logged In Successfully\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Driver Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3NzQ3OTc2LCJleHAiOjE2MTc3NTE1NzYsIm5iZiI6MTYxNzc0Nzk3NiwianRpIjoieFVJY0NNaWRwajJkUExJOCIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.38P3IpK6BZ7kxuIXNJuMnctJnRmJRysYaDNQpNEN5k4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/logout",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Driver Logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/logout",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:26:50 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Apr 2021 22:26:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"message\": \"Successfully logged out\",\n    \"code\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order Operations",
+			"item": [
+				{
+					"name": "Add new order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYxODA1NzU5OSwiZXhwIjoxNjE4MDYxMTk5LCJuYmYiOjE2MTgwNTc1OTksImp0aSI6IjBROW9haU5YYmYyQk9yRnYiLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.t45ukG8_Rxyx-iB-yQ-DBYZdJYkyjutTbkyJgKwZ8Qg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locations_pickup_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "locations_destination_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "load_weight",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+20",
+									"type": "text"
+								},
+								{
+									"key": "descriptions",
+									"value": "Some Description",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0123456789",
+									"type": "text"
+								},
+								{
+									"key": "recipient_name",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "goods_types_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "trucks_types_id",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "i_am_recipient",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}user/addOrder",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"addOrder"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Order Faild because there are still active order for the user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "locations_pickup_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "locations_destination_id",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "load_weight",
+											"value": "120",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "+20",
+											"type": "text"
+										},
+										{
+											"key": "descriptions",
+											"value": "Some Description",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0123456789",
+											"type": "text"
+										},
+										{
+											"key": "recipient_name",
+											"value": "Test",
+											"type": "text"
+										},
+										{
+											"key": "goods_types_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "trucks_types_id",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "i_am_recipient",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}user/addOrder",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"addOrder"
+									]
+								}
+							},
+							"status": "Expectation Failed",
+							"code": 417,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 12:27:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 12:27:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 74,\n    \"message\": \"Cannot send the order because you have order not done yet.\",\n    \"code\": 417\n}"
+						},
+						{
+							"name": "Order Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "locations_pickup_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "locations_destination_id",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "load_weight",
+											"value": "120",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "+20",
+											"type": "text"
+										},
+										{
+											"key": "descriptions",
+											"value": "Some Description",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0123456789",
+											"type": "text"
+										},
+										{
+											"key": "recipient_name",
+											"value": "Test",
+											"type": "text"
+										},
+										{
+											"key": "goods_types_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "trucks_types_id",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "i_am_recipient",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}user/addOrder",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"addOrder"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 12:26:55 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 12:26:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"orders_id\": 249,\n        \"cost\": 19205.926048454257,\n        \"created_at\": \"2021-04-10T12:26:55.000000Z\",\n        \"id\": 232\n    },\n    \"message\": \"Order Successfully Submitted.\",\n    \"code\": 200\n}"
+						},
+						{
+							"name": "Order can't be submitted because the user didn't rate his last order.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "locations_pickup_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "locations_destination_id",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "load_weight",
+											"value": "120",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "+20",
+											"type": "text"
+										},
+										{
+											"key": "descriptions",
+											"value": "Some Description",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0123456789",
+											"type": "text"
+										},
+										{
+											"key": "recipient_name",
+											"value": "Test",
+											"type": "text"
+										},
+										{
+											"key": "goods_types_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "trucks_types_id",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "i_am_recipient",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}user/addOrder",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"addOrder"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 12:28:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 12:28:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "HTTP/1.0 418 I'm a teapot\r\nCache-Control: no-cache, private\r\nContent-Type:  application/json\r\nDate:          Sat, 10 Apr 2021 12:28:20 GMT\r\n\r\n{\"data\":null,\"message\":\"Cannot send the order because you haven't rated your last order,\",\"code\":418}"
+						}
+					]
+				},
+				{
+					"name": "Check and Apply Discount Code",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYxODA1NzU5OSwiZXhwIjoxNjE4MDYxMTk5LCJuYmYiOjE2MTgwNTc1OTksImp0aSI6IjBROW9haU5YYmYyQk9yRnYiLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.t45ukG8_Rxyx-iB-yQ-DBYZdJYkyjutTbkyJgKwZ8Qg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}user/discountCode/19490",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"discountCode",
+								"19490"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Code used before",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/discountCode/19490",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"discountCode",
+										"19490"
+									]
+								}
+							},
+							"status": "Misdirected Request",
+							"code": 421,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:07:51 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:07:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 0,\n    \"message\": \"Code used before.\",\n    \"code\": 421\n}"
+						},
+						{
+							"name": "Code not active",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/discountCode/19490",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"discountCode",
+										"19490"
+									]
+								}
+							},
+							"status": "unknown status",
+							"code": 419,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:04:59 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:04:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"message\": \"Code not activated.\",\n    \"code\": 419\n}"
+						},
+						{
+							"name": "Code applied successfuly",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/discountCode/19490",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"discountCode",
+										"19490"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:07:25 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:07:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"message\": \"Discount applied successfully.\",\n    \"code\": 200\n}"
+						},
+						{
+							"name": "Code reached the limit",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/discountCode/19490",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"discountCode",
+										"19490"
+									]
+								}
+							},
+							"status": "unknown status",
+							"code": 420,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:08:54 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:08:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"message\": \"Code reached the limit.\",\n    \"code\": 420\n}"
+						},
+						{
+							"name": "Code not exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/discountCode/194901",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"discountCode",
+										"194901"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:09:59 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:09:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 0,\n    \"message\": \"Code not exist.\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User History Orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYxNzc1MzI5MiwiZXhwIjoxNjE3NzU2ODkyLCJuYmYiOjE2MTc3NTMyOTIsImp0aSI6ImdjOE5XQXk5UnBnQ2dmbG8iLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cQMigzEfvgV9fRq8i-LV-OCx3EsYBUsUTq6pYIzu7BQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}user/getOrder",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"getOrder"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User History Orders",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/getOrder",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"getOrder"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 00:17:40 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 00:17:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 50,\n            \"locations_pickup_id\": 109,\n            \"locations_destination_id\": 110,\n            \"image\": null,\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": \"5\",\n            \"status\": \"paid\",\n            \"created_at\": \"2019-09-04 15:15:09\",\n            \"users_id\": 18,\n            \"trucks_types_id\": 8,\n            \"code\": \"41905\",\n            \"drivers_id\": 44,\n            \"companies_id\": null\n        },\n        {\n            \"id\": 52,\n            \"locations_pickup_id\": 113,\n            \"locations_destination_id\": 114,\n            \"image\": null,\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": \"20\",\n            \"status\": \"paid\",\n            \"created_at\": \"2019-09-04 16:41:09\",\n            \"users_id\": 18,\n            \"trucks_types_id\": 8,\n            \"code\": \"86897\",\n            \"drivers_id\": 44,\n            \"companies_id\": null\n        },\n        {\n            \"id\": 56,\n            \"locations_pickup_id\": 123,\n            \"locations_destination_id\": 124,\n            \"image\": null,\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": \"٣٤\",\n            \"status\": \"paid\",\n            \"created_at\": \"2019-09-08 14:56:09\",\n            \"users_id\": 18,\n            \"trucks_types_id\": 8,\n            \"code\": \"48472\",\n            \"drivers_id\": 44,\n            \"companies_id\": null\n        },\n        {\n            \"id\": 60,\n            \"locations_pickup_id\": 134,\n            \"locations_destination_id\": 135,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/O1dxFgcQjVRuREXi.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": \"ali\",\n            \"country_code\": \"+20\",\n            \"phone\": \"+201002345678\",\n            \"load_weight\": \"70\",\n            \"status\": \"paid\",\n            \"created_at\": \"2019-09-15 15:01:09\",\n            \"users_id\": 18,\n            \"trucks_types_id\": 8,\n            \"code\": \"33842\",\n            \"drivers_id\": 63,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"History of orders.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Driver History Orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3NzU0ODg5LCJleHAiOjE2MTc3NTg0ODksIm5iZiI6MTYxNzc1NDg4OSwianRpIjoiMXU4WG05WDFIR21UeHE1dCIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.j4pRgWxqwnIV1SfAtF_98lPGs-HBpqKgzDNT0S6PDOY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/getOrder",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"getOrder"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Driver History Orders",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/getOrder",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"getOrder"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 00:21:38 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 00:21:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 50,\n            \"locations_pickup_id\": 109,\n            \"locations_destination_id\": 110,\n            \"image\": null,\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": \"5\",\n            \"status\": \"paid\",\n            \"created_at\": \"2019-09-04 15:15:09\",\n            \"users_id\": 18,\n            \"trucks_types_id\": 8,\n            \"code\": \"41905\",\n            \"drivers_id\": 44,\n            \"companies_id\": null\n        },\n        {\n            \"id\": 52,\n            \"locations_pickup_id\": 113,\n            \"locations_destination_id\": 114,\n            \"image\": null,\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": \"20\",\n            \"status\": \"paid\",\n            \"created_at\": \"2019-09-04 16:41:09\",\n            \"users_id\": 18,\n            \"trucks_types_id\": 8,\n            \"code\": \"86897\",\n            \"drivers_id\": 44,\n            \"companies_id\": null\n        },\n        {\n            \"id\": 56,\n            \"locations_pickup_id\": 123,\n            \"locations_destination_id\": 124,\n            \"image\": null,\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": \"٣٤\",\n            \"status\": \"paid\",\n            \"created_at\": \"2019-09-08 14:56:09\",\n            \"users_id\": 18,\n            \"trucks_types_id\": 8,\n            \"code\": \"48472\",\n            \"drivers_id\": 44,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Driver history of orders.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User Pending Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYxNzgwMTQ5NCwiZXhwIjoxNjE3ODA1MDk0LCJuYmYiOjE2MTc4MDE0OTQsImp0aSI6IlVXSnM2bXd0SDRwejhqMGQiLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.9gtzbg527o9GwHkt_7eFI7zFvvVeN8LkBnOGouV7WYw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}user/getPendingOrder",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"getPendingOrder"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User Pending Orders",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/getPendingOrder",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"getPendingOrder"
+									]
+								}
+							},
+							"status": "Expectation Failed",
+							"code": 417,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 13:21:29 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 13:21:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 74,\n    \"message\": \"No Orders Found.\",\n    \"code\": 417\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Driver Pending Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3ODAxODY3LCJleHAiOjE2MTc4MDU0NjcsIm5iZiI6MTYxNzgwMTg2NywianRpIjoibXpiSGZSRU9Id2VVMmtieiIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.NxN0nbXMC6G00ZOtopFz_uRONJCBJJHSQO4gyCkarT8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/getPendingOrder",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"getPendingOrder"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Driver Pending Order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/getPendingOrder",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"getPendingOrder"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 13:35:53 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 13:35:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"awaitingPayment\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 67,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Driver active order.\",\n    \"code\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order Status Updating",
+			"item": [
+				{
+					"name": "Cancel Order By User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYxNzgxMjY2OCwiZXhwIjoxNjE3ODE2MjY4LCJuYmYiOjE2MTc4MTI2NjgsImp0aSI6ImVLREFuNVdJVXhoSzgwYXciLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.L7j8ey3W5kIzH3rywI5XSXvrPj6INLZ4H7s3GDoZBsk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}user/cancelOrderByUser",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"cancelOrderByUser"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cancel Order By User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/cancelOrderByUser",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"cancelOrderByUser"
+									]
+								}
+							},
+							"status": "Locked",
+							"code": 423,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 16:32:18 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 16:32:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 74,\n    \"message\": \"Can't cancel the order\",\n    \"code\": 423\n}"
+						},
+						{
+							"name": "Cancel Order By User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/cancelOrderByUser",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"cancelOrderByUser"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 16:32:53 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 16:32:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"awaitingPayment\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 74,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Successfully canceled.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Cancel Order By Driver",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3ODE2NjM0LCJleHAiOjE2MTc4MjAyMzQsIm5iZiI6MTYxNzgxNjYzNCwianRpIjoiRHc4SE5KS0NQc1hwYXBmdiIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.FhIgFck7j9guEr5GBUZxH-WHnmPxi_zNPm7G98jEbCM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/cancelOrderByDriver",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"cancelOrderByDriver"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cancel Order By Driver",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/cancelOrderByDriver",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"cancelOrderByDriver"
+									]
+								}
+							},
+							"status": "unknown status",
+							"code": 427,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 17:30:56 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 17:30:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 76,\n    \"message\": \"Can't cancel the order,\",\n    \"code\": 427\n}"
+						},
+						{
+							"name": "Cancel Order By Driver",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/cancelOrderByDriver",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"cancelOrderByDriver"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 17:33:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 17:33:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"acceptedByDriver\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 74,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Successfully canceled.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Driver Accept The Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE4MDY0ODc3LCJleHAiOjE2MTgwNjg0NzcsIm5iZiI6MTYxODA2NDg3NywianRpIjoieFg3ZEdvQVdncmtRMldkYyIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.bUJCDMU00W1b9PYLhkj0eOWfw9StR9XxkiHeRhr0TFI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/acceptOrderByDriver",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"acceptOrderByDriver"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Driver didn't rate his last order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/acceptOrderByDriver",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"acceptOrderByDriver"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 14:31:57 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 14:31:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "HTTP/1.0 426 Upgrade Required\r\nCache-Control: no-cache, private\r\nContent-Type:  application/json\r\nDate:          Sat, 10 Apr 2021 14:31:57 GMT\r\n\r\n{\"data\":null,\"message\":\"Cannot send the order because you haven't rated your last order,\",\"code\":426}"
+						},
+						{
+							"name": "Driver Successfully Accept the Order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/acceptOrderByDriver",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"acceptOrderByDriver"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 14:36:36 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 14:36:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null,\n    \"message\": \"Successfully accepted.\",\n    \"code\": 200\n}"
+						},
+						{
+							"name": "Can't accept the order because the driver didn't rate his last order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/acceptOrderByDriver",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"acceptOrderByDriver"
+									]
+								}
+							},
+							"status": "Too Early",
+							"code": 425,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:53:28 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:53:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 76,\n    \"message\": \"Cannot send the order because you have order not done yet.\",\n    \"code\": 425\n}"
+						},
+						{
+							"name": "The order status not awaitingDriver",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/acceptOrderByDriver",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"acceptOrderByDriver"
+									]
+								}
+							},
+							"status": "Failed Dependency",
+							"code": 424,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:51:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 10 Apr 2021 13:51:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 76,\n    \"message\": \"Action can't completed\",\n    \"code\": 424\n}"
+						}
+					]
+				},
+				{
+					"name": "Driver Arrived To Pick Up Location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3ODMwNzcwLCJleHAiOjE2MTc4MzQzNzAsIm5iZiI6MTYxNzgzMDc3MCwianRpIjoiYkRGbUlubnJHejU4WnBkNiIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.xNy0gM1PNLCVzg3hvvIMBCF_709fZAAGZa4J5QpR9Tw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/arrivedToPickUpLocation",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"arrivedToPickUpLocation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Driver Arrived To Pick Up Location",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/arrivedToPickUpLocation",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"arrivedToPickUpLocation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:27:00 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:27:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"acceptedByDriver\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 74,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Successfully canceled.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Driver Goods Loading Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3ODMwNzcwLCJleHAiOjE2MTc4MzQzNzAsIm5iZiI6MTYxNzgzMDc3MCwianRpIjoiYkRGbUlubnJHejU4WnBkNiIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.xNy0gM1PNLCVzg3hvvIMBCF_709fZAAGZa4J5QpR9Tw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/goodsLoading",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"goodsLoading"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Driver Goods Loading Status",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/goodsLoading",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"goodsLoading"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:37:13 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:37:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"arrivedPickUpLocation\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 74,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Successfully updated.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Driver Start Moving Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3ODMwNzcwLCJleHAiOjE2MTc4MzQzNzAsIm5iZiI6MTYxNzgzMDc3MCwianRpIjoiYkRGbUlubnJHejU4WnBkNiIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.xNy0gM1PNLCVzg3hvvIMBCF_709fZAAGZa4J5QpR9Tw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/startMoving",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"startMoving"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Driver Start Moving Status",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/startMoving",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"startMoving"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:43:28 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:43:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"goodsLoading\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 74,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Successfully updated.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Driver Arrived To Destination Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3ODMwNzcwLCJleHAiOjE2MTc4MzQzNzAsIm5iZiI6MTYxNzgzMDc3MCwianRpIjoiYkRGbUlubnJHejU4WnBkNiIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.xNy0gM1PNLCVzg3hvvIMBCF_709fZAAGZa4J5QpR9Tw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/arrivedToDestinationLocation",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"arrivedToDestinationLocation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Driver Arrived To Destination Status",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/arrivedToDestinationLocation",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"arrivedToDestinationLocation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:52:14 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:52:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"startMoving\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 74,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Successfully updated.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Finish Trip By Driver",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9kcml2ZXJcL2xvZ2luIiwiaWF0IjoxNjE3ODMwNzcwLCJleHAiOjE2MTc4MzQzNzAsIm5iZiI6MTYxNzgzMDc3MCwianRpIjoiYkRGbUlubnJHejU4WnBkNiIsInN1YiI6NzYsInBydiI6IjkxOWMzMjZkNDNhYjE1MTlhOGJhM2I4NTg2YjY4NzUyZThjODM4MDcifQ.xNy0gM1PNLCVzg3hvvIMBCF_709fZAAGZa4J5QpR9Tw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}driver/finishTripByDriver",
+							"host": [
+								"{{url}}driver"
+							],
+							"path": [
+								"finishTripByDriver"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Finish Trip By Driver",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}driver/finishTripByDriver",
+									"host": [
+										"{{url}}driver"
+									],
+									"path": [
+										"finishTripByDriver"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:55:13 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 21:55:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"arrivedToDestinationLocation\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 74,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Successfully updated.\",\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Finish Trip By User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYxNzgzMjcwNSwiZXhwIjoxNjE3ODM2MzA1LCJuYmYiOjE2MTc4MzI3MDUsImp0aSI6IkUzaGY2ZDBrUVhlb29WTm8iLCJzdWIiOjc0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.IrmwkULjNAcYA5D1T2idKPg3KPudcrumorR9V_IZgbk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}user/finishTripByUser",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"finishTripByUser"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Finish Trip By User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}user/finishTripByUser",
+									"host": [
+										"{{url}}user"
+									],
+									"path": [
+										"finishTripByUser"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 22:04:47 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Apr 2021 22:04:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 245,\n            \"locations_pickup_id\": 531,\n            \"locations_destination_id\": 532,\n            \"image\": \"https://shipit.projects.tmtgps.me/uploads/users/yIK9zUXoHiAg7GwB.jpg\",\n            \"goods_types_id\": 5,\n            \"descriptions\": null,\n            \"i_am_recipient\": 1,\n            \"recipient_name\": null,\n            \"country_code\": null,\n            \"phone\": null,\n            \"load_weight\": null,\n            \"status\": \"finishedTripByDriver\",\n            \"created_at\": \"2021-02-22 20:35:02\",\n            \"users_id\": 74,\n            \"trucks_types_id\": 7,\n            \"code\": \"54400\",\n            \"drivers_id\": 76,\n            \"companies_id\": null\n        }\n    ],\n    \"message\": \"Successfully updated.\",\n    \"code\": 200\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
